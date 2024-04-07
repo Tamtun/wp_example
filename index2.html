@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script language = "javascript">
+        arrColor = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
+        function mouseOut() {
+          for (i = 0; i < 13; i++)
+            setTimeout ('document.blinkbutton.button.style.background = "#'+arrColor[15-i]+'0'+arrColor[15-i]+'FFF";', i * 50);
+        }
+        function mouseOver() {
+          for (i = 0; i < 15; i++)
+            setTimeout ('document.blinkbutton.button.style.background = "#'+arrColor[i]+'0'+arrColor[i]+'F31";', i * 50);
+        }
+        function onClick() {
+            location.href ="index.html"
+        }
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title class="hd_color">Пример HTML-страницы</title>
+    <style>
+        html, body {
+            height: max-content;
+        }
+        body{
+            background: linear-gradient(#be1ba9f6, #17e0c6) no-repeat;
+        }
+        p{
+            border: 2px solid purple;
+            padding: 6px;
+            width:fit-content
+        }
+        text{
+            text-align: center;
+        }
+        img{
+            text-align: center;
+        }
+        table {
+            width: 650px;
+            border-top: 7px solid rgb(52, 10, 207);
+            border-collapse: collapse;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px solid #7e3232;
+}
+        </style>
+</head>
+<body class="body">
+    <header>
+        <h1 align="center"><b><i>Ода героям Кадии</i></b></h1> 
+        <h2 align="center"><b><i>Библиарий каллимах</b></i></h2>
+    </header>
+    <div align=center class="img">
+    <img src="wh.jpg" width="612" height="344">
+</div>
+    <main>
+        <p2>- Скажи ка псайкер, ведь не даром,<br>
+            Та Кадия, что скована пожаром,<br>
+            Проклятым хаоситам отдана?<br>
+            Ведь мы сломили дух Лоргара,<br>
+            И Луперкаль не минул кары,<br>
+            Навечно в речи комиссара<br>
+            Впечатались те времена.</p2>
+            <br>
+            <br>
+            <p2>- Да, вот астартес в наше время -<br>
+            Не то, что нынешнее племя -<br>
+            За честь, а не за почесть бьясь.<br>
+            Отважней ль видел гарнизона?<br>
+            И каб не козни Аббадона,<br>
+            Держалась б наша оборона,<br>
+            Стояла б Кадия сейчас!</p2>
+            <br>
+            <br>
+            <p2>Мы долго сдерживали нечисть,<br>
+            Проклятым тварям в сердце метясь,<br>
+            Ворчали старики:<br>
+            «Что мы, за императора не сможем<br>
+            С хаосских тварей сдернуть кожу,<br>
+            Отродьям Кхорна взмылить рожи,<br>
+            Пообломать клыки».</p2>
+            <br>
+            <br>
+            <p2>И вот, пилоны окружили,<br>
+            С некроном нуль-поля сложили,<br>
+            Литаньи шепчет техножрец.<br>
+            Залили мы прометий в пушки,<br>
+            Начистили свои игрушки,<br>
+            И Селестина здесь, старушка,<br>
+            Ну все, предателям конец.</p2>
+            <br>
+            <br>
+    </main>
+    <form align="center"  name = "blinkbutton">
+        <input  type="button" name="button" value=" Главная страница " onMouseOver='mouseOver()' onMouseOut='mouseOut()' onClick='onClick()' style="background-color: #1400FF" >
+      </form>
+    <footer>
+        <p2>© 2024 Моя домашка. Все права защищены.</p2>
+    </footer>
+</body>
+</html>

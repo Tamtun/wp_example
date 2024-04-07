@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script language = "javascript">
+        arrColor = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
+        function mouseOut() {
+          for (i = 0; i < 13; i++)
+            setTimeout ('document.blinkbutton.button.style.background = "#'+arrColor[15-i]+'0'+arrColor[15-i]+'FFF";', i * 50);
+        }
+        function mouseOver() {
+          for (i = 0; i < 15; i++)
+            setTimeout ('document.blinkbutton.button.style.background = "#'+arrColor[i]+'0'+arrColor[i]+'F31";', i * 50);
+        }
+        function onClick() {
+            location.href ="index2.html"
+        }
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title class="hd_color">Пример HTML-страницы</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body{
+            background: linear-gradient(#be1ba9f6, #17e0c6) no-repeat;
+        }
+        p{
+            border: 2px solid purple;
+            padding: 6px;
+            width:fit-content
+        }
+        text{
+            text-align: center;
+        }
+        img{
+            text-align: center;
+        }
+        table {
+            width: 650px;
+            border-top: 7px solid rgb(52, 10, 207);
+            border-collapse: collapse;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px solid #7e3232;
+}
+        </style>
+</head>
+<body class="body">
+    <header>
+        <h1 align="center">Главная страница</h1>
+    </header>
+    <div align=center class="img">
+    <img src="test.jpg">
+</div>
+    <main>
+        <section>
+            <h2 align=center style="color: hwb(101 8% 71%);">Наведите курсор на текст ниже</h2>
+            <div align=center class="text">
+            <p style="font-size: x-large;" title="Спасибо за внимание"><i><b>Внимание</i></b></p>
+        </div>
+        </section>
+
+        <section>
+            <h2 align="center">А тут у нас пример таблицы</h2>
+            <table align="center">
+                <tr>
+                    <td>ФИО</td>
+                    <td>Дата Рождения</td>
+                    <td>Год окончания обучения</td>
+                </tr>
+                <tr>
+                    <td>Иванов Иван Иванович</td>
+                    <td>01.01.1990</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>Семёнов Семён Семёнович</td>
+                    <td>01.01.2000</td>
+                    <td>2018</td>
+                </tr>
+        </table>
+        </section>
+    </main>
+    <form name = "blinkbutton">
+        <input  type="button" name="button" value=" Страница с текстом " onMouseOver='mouseOver()' onMouseOut='mouseOut()' onClick='onClick()' style="background-color: #1400FF" >
+      </form>
+    <footer>
+        <p2>© 2024 Моя домашка. Все права защищены.</p2>
+    </footer>
+</body>
+</html>
